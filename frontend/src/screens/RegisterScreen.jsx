@@ -50,7 +50,7 @@ const RegisterScreen = () => {
 
   return (
     <FormContainer>
-      <h1>Register</h1>
+      <h1>Registro</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group className='my-2' controlId='name'>
           <Form.Label>Name</Form.Label>
@@ -63,7 +63,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='email'>
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label>E-mail</Form.Label>
           <Form.Control
             type='email'
             placeholder='Enter email'
@@ -73,7 +73,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group className='my-2' controlId='password'>
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Senha</Form.Label>
           <Form.Control
             type='password'
             placeholder='Enter password'
@@ -82,7 +82,7 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
         <Form.Group className='my-2' controlId='confirmPassword'>
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label>Confirmar senha</Form.Label>
           <Form.Control
             type='password'
             placeholder='Confirm password'
@@ -92,7 +92,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Button disabled={isLoading} type='submit' variant='primary'>
-          Register
+          Registrar
         </Button>
 
         {isLoading && <Loader />}
@@ -100,7 +100,7 @@ const RegisterScreen = () => {
 
       <Row className='py-3'>
         <Col>
-          Already have an account?{' '}
+          Já possui uma conta?{' '}
           <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
             Login
           </Link>
