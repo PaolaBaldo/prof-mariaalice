@@ -89,7 +89,7 @@ const ProductScreen = () => {
                   <h3>{product.name}</h3>
                 </ListGroup.Item>
 
-                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+                <ListGroup.Item>Preço: R${product.price}</ListGroup.Item>
                 <ListGroup.Item>
                    {product.description}
                 </ListGroup.Item>
@@ -100,9 +100,9 @@ const ProductScreen = () => {
                 <ListGroup variant='flush'>
                   <ListGroup.Item>
                     <Row>
-                      <Col>Price:</Col>
+                      <Col>Preço:</Col>
                       <Col>
-                        <strong>${product.price}</strong>
+                        <strong>R${product.price}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>
@@ -146,7 +146,7 @@ const ProductScreen = () => {
                       disabled={product.countInStock === 0}
                       onClick={addToCartHandler}
                     >
-                      Add To Cart
+                      Adicionar ao carrinho
                     </Button>
                   </ListGroup.Item>
                 </ListGroup>
@@ -155,7 +155,7 @@ const ProductScreen = () => {
           </Row>
           <Row className='review'>
             <Col md={4}>
-              <h2>Reviews</h2>
+              <h2>Avaliações</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant='flush'>
                 {product.reviews.map((review) => (
@@ -167,7 +167,7 @@ const ProductScreen = () => {
                   </ListGroup.Item>
                 ))}
                 <ListGroup.Item>
-                  <h2>Write a Customer Review</h2>
+                  <h2>Escreva uma avaliação</h2>
 
                   {loadingProductReview && <Loader />}
 
