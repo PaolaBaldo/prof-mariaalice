@@ -38,7 +38,7 @@ const ProductScreen = () => {
   };
 
   const handleClick = () => {
-      window.location.replace('https://cleansolid-c0f64a400a8c.herokuapp.com');
+      window.location.replace('https://wa.me/555195085891');
     };
 
   const {
