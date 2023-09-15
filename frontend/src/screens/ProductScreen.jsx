@@ -37,6 +37,10 @@ const ProductScreen = () => {
     navigate('/cart');
   };
 
+  const handleClick = () => {
+      window.location.replace('https://cleansolid-c0f64a400a8c.herokuapp.com');
+    };
+
   const {
     data: product,
     isLoading,
@@ -150,6 +154,21 @@ const ProductScreen = () => {
                       Adicionar ao carrinho
                     </Button>
                   </ListGroup.Item>
+             <ListGroup.Item>
+
+
+                                  <Button
+                                                      className='btn-block'
+                                                      type='button'
+                                                      /*disabled={product.countInStock === 0}*/
+                                                      disabled={false}
+                                                      onClick={handleClick}
+                                                    >
+                                                      Entre em contato
+                                                    </Button>
+
+
+                               </ListGroup.Item>
                 </ListGroup>
               </Card>
             </Col>

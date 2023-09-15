@@ -1,5 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
-
+const handleClick = () => {
+    window.location.replace('https://cleansolid-c0f64a400a8c.herokuapp.com');
+  };
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -8,7 +10,8 @@ const Footer = () => {
       <Container>
         <Row>
           <Col className='text-center py-3'>
-            <p>Prof. Maria Alice &copy; {currentYear}</p>
+            <button className='btn-block'
+                                          type='button' onClick={handleClick}>Crie sua loja virtual CleanSolid</button>
           </Col>
         </Row>
       </Container>
