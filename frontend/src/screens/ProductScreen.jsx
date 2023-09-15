@@ -143,7 +143,8 @@ const ProductScreen = () => {
                     <Button
                       className='btn-block'
                       type='button'
-                      disabled={product.countInStock === 0}
+                      /*disabled={product.countInStock === 0}*/
+                      disabled={true}
                       onClick={addToCartHandler}
                     >
                       Adicionar ao carrinho
